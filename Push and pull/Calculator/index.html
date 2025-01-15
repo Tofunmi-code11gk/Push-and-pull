@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator with Stack</title>
+    <link rel="stylesheet" href="sheet.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stack Calculator</h1>
+        <input type="text" id="display" readonly placeholder="0">
+        <div class="buttons">
+            <button onclick="appendValue('1')">1</button>
+            <button onclick="appendValue('2')">2</button>
+            <button onclick="appendValue('3')">3</button>
+            <button onclick="appendValue('+')">+</button>
+            <button onclick="appendValue('-')">-</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="pushStack()">Push</button>
+            <button onclick="popStack()">Pop</button>
+            <button onclick="clearDisplay()">Clear</button>
+        </div>
+        <h2>Stack:</h2>
+        <ul id="stack-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
